@@ -58,3 +58,19 @@ data {-# CLASS "java.util.jar.Attributes$Name" #-}
 type instance Inherits Name = '[Object, Attributes]
 
 -- End java.util.jar.Attributes.Name
+
+-- Start java.util.jar.Attributes.Name
+
+data {-# CLASS "java.util.jar.Manifest" #-}
+  Manifest = Manifest (Object# Manifest)
+  deriving Class
+
+-- End java.util.jar.Manifest
+
+-- Start java.util.jar.Pack200
+
+data {-# CLASS "java.util.jar.Pack200" #-}
+  Pack200 = Pack200 (Object# Pack200)
+  deriving Class
+
+-- End java.util.jar.Pack200
