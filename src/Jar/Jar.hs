@@ -53,3 +53,13 @@ data {-# CLASS "java.util.jar.JarInputStream" #-}
 type instance Inherits JarInputStream = '[ZipInputStream, Closeable]
 
 -- End java.util.jar.JarInputStream
+
+-- Start java.util.jar.JarOutputStream
+
+data {-# CLASS "java.util.jar.JarOutputStream" #-}
+  JarOutputStream = JarOutputStream (Object# JarOutputStream)
+  deriving Class
+
+type instance Inherits JarOutputStream = '[ZipOutputStream, Closeable, Flushable]
+
+-- End java.util.jar.JarOutputStream
